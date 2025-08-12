@@ -1,0 +1,2 @@
+for logging code refer Python logging documents
+for exception code refer Python Exception documents
