@@ -71,32 +71,32 @@ End-to-End_US-Visa-Approval-MLOps-Project/
 ## Workflow
 
 1. Experimentation in Notebooks
-* Data exploration, feature engineering, and initial model selection
+    * Data exploration, feature engineering, and initial model selection
 
-Pipeline Components
+2. Pipeline Components
 
-2. Data Ingestion: Fetch raw data from MongoDB / S3
-* Data Validation: Schema & missing values checks
-* Data Transformation: Encoding, scaling, and feature prep
-* Model Training: Train ML models & save best version
-* Model Evaluation: Check accuracy, precision, recall, F1
-* Model Pusher: Upload trained model to S3 & trigger deployment
+    * Data Ingestion: Fetch raw data from MongoDB / S3
+    * Data Validation: Schema & missing values checks
+    * Data Transformation: Encoding, scaling, and feature prep
+    * Model Training: Train ML models & save best version
+    * Model Evaluation: Check accuracy, precision, recall, F1
+    * Model Pusher: Upload trained model to S3 & trigger deployment
 
 3. Dockerization
-* Create image, push to AWS ECR
+    * Create image, push to AWS ECR
 
 4. Deployment
-* Launch container on AWS EC2
+    * Launch container on AWS EC2
 
 5. Monitoring
-* Use Evidently AI to track data drift and trigger retraining
+    * Use Evidently AI to track data drift and trigger retraining
 
 ## Model Monitoring (Evidently AI)
 
 The system automatically generates reports on:
-* Data drift
-* Target drift
-* Feature distribution changes
+    * Data drift
+    * Target drift
+    * Feature distribution changes
 
 This ensures model reliability even as new visa applications deviate from training data.
 
